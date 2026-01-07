@@ -17,67 +17,65 @@
       --border: #262b36;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 0 auto;
       padding: 40px 20px;
     }
 
-    header {
-      margin-bottom: 40px;
+    h1, h2, h3 {
+      color: #ffffff;
     }
 
     h1 {
       font-size: 2.4rem;
       margin-bottom: 10px;
-      color: #ffffff;
     }
 
     h2 {
-      font-size: 1.6rem;
-      margin-top: 40px;
+      font-size: 1.7rem;
+      margin-top: 50px;
       margin-bottom: 15px;
-      color: #ffffff;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
     }
 
     p {
       color: var(--muted);
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .tagline {
       font-size: 1.1rem;
+      max-width: 750px;
       color: var(--text);
-      max-width: 700px;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 25px;
+      padding: 26px;
+      margin-bottom: 28px;
     }
 
     ul {
-      padding-left: 20px;
-      margin: 0;
+      padding-left: 18px;
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: var(--muted);
     }
 
@@ -85,21 +83,21 @@
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     .btn {
-      text-decoration: none;
       padding: 14px 22px;
       border-radius: 10px;
       font-weight: 600;
+      text-decoration: none;
       color: #000;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
     }
 
     .btn-primary {
@@ -115,7 +113,7 @@
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: 70px;
       padding-top: 25px;
       border-top: 1px solid var(--border);
       font-size: 0.9rem;
@@ -127,76 +125,112 @@
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .buttons {
-        flex-direction: column;
-      }
-      .btn {
-        text-align: center;
-      }
+      h1 { font-size: 2rem; }
+      .buttons { flex-direction: column; }
+      .btn { text-align: center; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Ghar Se Shakti</h1>
-      <p class="tagline">
-        A complete, practical ready reckoner for Indian homemakers — designed for real-life decisions, daily confidence, and informed living.
-      </p>
-    </header>
+<div class="container">
+
+  <header>
+    <h1>Ghar Se Shakti</h1>
+    <p class="tagline">
+      A practical, evidence-based ready reckoner for Indian homemakers — built for daily decisions, protection, and quiet confidence.
+    </p>
+
+    <div class="buttons">
+      <a href="#ready-reckoner" class="btn btn-primary">Go to Ready Reckoner</a>
+      <a href="#government" class="btn btn-secondary">Government Resources</a>
+      <a href="#share" class="btn btn-tertiary">Share with Family</a>
+    </div>
+  </header>
+
+  <!-- READY RECKONER CONTENT -->
+  <section id="ready-reckoner">
+
+    <h2>Ready Reckoner – Key Sections</h2>
 
     <div class="card">
-      <h2>Who This Is For</h2>
+      <h3>1. Digital & AI Awareness</h3>
       <ul>
-        <li>Homemakers managing households, finances, and family decisions</li>
-        <li>Women active in RWAs, SHGs, school and community groups</li>
-        <li>Urban and semi-urban families seeking clarity without jargon</li>
-        <li>Anyone who wants awareness without fear or noise</li>
+        <li>AI is a tool, not a thinking human — it only follows instructions.</li>
+        <li>Voice and video can be faked. Always verify emergencies independently.</li>
+        <li>OTP is equal to your signature. Never share it with anyone.</li>
+        <li>Install apps only from official app stores and review permissions.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>What You Will Find Here</h2>
+      <h3>2. Legal Rights Every Homemaker Must Know</h3>
       <ul>
-        <li>Digital and AI awareness explained simply</li>
-        <li>Legal rights every homemaker must know</li>
-        <li>Fraud, cheating, and manipulation awareness</li>
-        <li>Government schemes with direct access</li>
-        <li>Behaviour, ethics, and social confidence</li>
-        <li>Sanatan Dharma explained with facts and context</li>
-        <li>National development understood beyond viral noise</li>
+        <li>Domestic violence includes emotional and economic abuse, not only physical harm.</li>
+        <li>A woman has the right to live in the shared household, even if it’s not in her name.</li>
+        <li>Daughters have equal inheritance rights since 2005.</li>
+        <li>Streedhan belongs only to the woman. No one else can control it.</li>
       </ul>
-
-      <div class="buttons">
-        <a href="#" class="btn btn-primary">Read the Ready Reckoner</a>
-        <a href="#" class="btn btn-secondary">Browse Sections</a>
-        <a href="#" class="btn btn-tertiary">Share with Family</a>
-      </div>
     </div>
 
     <div class="card">
-      <h2>How to Use This</h2>
-      <p>
-        This is not meant to be read in one sitting. Each section stands on its own.
-        Use it like a household reference — read what you need, when you need it.
-      </p>
-      <p>
-        Share selectively. Discuss thoughtfully. Apply confidently.
-      </p>
+      <h3>3. Fraud, Cheating & Social Manipulation</h3>
+      <ul>
+        <li>Guaranteed high returns almost always indicate fraud.</li>
+        <li>Pyramid schemes collapse mathematically — most participants lose money.</li>
+        <li>Government schemes never ask for registration or processing fees.</li>
+        <li>Emotional pressure, urgency, and secrecy are classic scam signals.</li>
+      </ul>
     </div>
 
-    <footer>
-      <p>
-        <strong>Created by Kallol Chakrabarti, Global Independent Researcher.</strong>
-      </p>
-      <p>
-        Shared for education, awareness, and responsible use.  
-        Knowledge strengthens homes. Strong homes strengthen society.
-      </p>
-    </footer>
-  </div>
+    <div class="card">
+      <h3>4. Sanatan Dharma – Truth & Context</h3>
+      <ul>
+        <li>Varna was based on qualities and work, not birth.</li>
+        <li>Untouchability is a historical distortion, not scriptural teaching.</li>
+        <li>Core scriptures emphasize equality of atman in all beings.</li>
+        <li>Faith becomes stronger when grounded in knowledge, not confusion.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>5. Behaviour, Ethics & Social Conduct</h3>
+      <ul>
+        <li>Assertiveness protects dignity without aggression.</li>
+        <li>Boundaries are necessary for mental peace and family stability.</li>
+        <li>Saying “no” respectfully is a life skill, not selfishness.</li>
+        <li>Children learn values more from actions than lectures.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="government">
+      <h3>6. Government Resources That Actually Help</h3>
+      <ul>
+        <li>Ayushman Bharat provides free health cover up to ₹5 lakh.</li>
+        <li>Widow and old-age pensions can be applied through CSCs.</li>
+        <li>Mudra loans are collateral-free and women are priority beneficiaries.</li>
+        <li>Helplines and portals work — middlemen are not required.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>7. Understanding National Development</h3>
+      <ul>
+        <li>Verify viral claims using official data, not forwards.</li>
+        <li>Progress is gradual — neither zero nor perfect.</li>
+        <li>Independent thinking protects against misinformation.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer id="share">
+    <p><strong>Created by Kallol Chakrabarti, Global Independent Researcher.</strong></p>
+    <p>
+      Shared for education, awareness, and responsible use.  
+      When a homemaker is informed, the entire home becomes stronger.
+    </p>
+  </footer>
+
+</div>
 </body>
 </html>
