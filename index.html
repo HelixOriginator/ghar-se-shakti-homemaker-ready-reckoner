@@ -26,7 +26,7 @@
     }
 
     .container {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 40px 20px;
     }
@@ -35,32 +35,11 @@
       color: #ffffff;
     }
 
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-    }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.8rem; margin-top: 55px; }
+    h3 { font-size: 1.15rem; margin-bottom: 8px; }
 
-    h2 {
-      font-size: 1.7rem;
-      margin-top: 50px;
-      margin-bottom: 15px;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-    }
-
-    p {
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-
-    .tagline {
-      font-size: 1.1rem;
-      max-width: 750px;
-      color: var(--text);
-    }
+    p { color: var(--muted); }
 
     .card {
       background: var(--card);
@@ -70,20 +49,14 @@
       margin-bottom: 28px;
     }
 
-    ul {
-      padding-left: 18px;
-    }
-
-    li {
-      margin-bottom: 8px;
-      color: var(--muted);
-    }
+    ul { padding-left: 18px; }
+    li { margin-bottom: 8px; color: var(--muted); }
 
     .buttons {
       display: flex;
-      flex-wrap: wrap;
       gap: 15px;
       margin-top: 25px;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -92,12 +65,6 @@
       font-weight: 600;
       text-decoration: none;
       color: #000;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
     }
 
     .btn-primary {
@@ -108,10 +75,6 @@
       background: linear-gradient(135deg, var(--accent2), #6ae3ff);
     }
 
-    .btn-tertiary {
-      background: linear-gradient(135deg, var(--accent3), #b6ff5c);
-    }
-
     footer {
       margin-top: 70px;
       padding-top: 25px;
@@ -120,8 +83,15 @@
       color: var(--muted);
     }
 
-    footer strong {
-      color: var(--text);
+    footer strong { color: var(--text); }
+
+    a {
+      color: var(--accent2);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -136,98 +106,142 @@
 
   <header>
     <h1>Ghar Se Shakti</h1>
-    <p class="tagline">
-      A practical, evidence-based ready reckoner for Indian homemakers — built for daily decisions, protection, and quiet confidence.
+    <p>
+      A practical, evidence-based ready reckoner for Indian homemakers — built for daily decisions, protection, and confidence.
     </p>
 
     <div class="buttons">
       <a href="#ready-reckoner" class="btn btn-primary">Go to Ready Reckoner</a>
-      <a href="#government" class="btn btn-secondary">Government Resources</a>
-      <a href="#share" class="btn btn-tertiary">Share with Family</a>
+      <a href="#government" class="btn btn-secondary">Government Yojanas</a>
     </div>
   </header>
 
-  <!-- READY RECKONER CONTENT -->
+  <!-- READY RECKONER -->
   <section id="ready-reckoner">
 
-    <h2>Ready Reckoner – Key Sections</h2>
+    <h2>Ready Reckoner – Key Highlights</h2>
 
     <div class="card">
-      <h3>1. Digital & AI Awareness</h3>
+      <h3>Digital & AI Awareness</h3>
       <ul>
-        <li>AI is a tool, not a thinking human — it only follows instructions.</li>
-        <li>Voice and video can be faked. Always verify emergencies independently.</li>
-        <li>OTP is equal to your signature. Never share it with anyone.</li>
-        <li>Install apps only from official app stores and review permissions.</li>
+        <li>AI is a tool, not intelligence like humans.</li>
+        <li>Voice and video can be faked. Always verify emergencies.</li>
+        <li>OTP is equal to your signature. Never share it.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>2. Legal Rights Every Homemaker Must Know</h3>
+      <h3>Legal Rights</h3>
       <ul>
-        <li>Domestic violence includes emotional and economic abuse, not only physical harm.</li>
-        <li>A woman has the right to live in the shared household, even if it’s not in her name.</li>
-        <li>Daughters have equal inheritance rights since 2005.</li>
-        <li>Streedhan belongs only to the woman. No one else can control it.</li>
+        <li>Domestic violence includes emotional and economic abuse.</li>
+        <li>Right to live in shared household even if not in your name.</li>
+        <li>Daughters have equal property rights since 2005.</li>
+        <li>Streedhan belongs only to the woman.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>3. Fraud, Cheating & Social Manipulation</h3>
+      <h3>Fraud & Manipulation Awareness</h3>
       <ul>
-        <li>Guaranteed high returns almost always indicate fraud.</li>
-        <li>Pyramid schemes collapse mathematically — most participants lose money.</li>
-        <li>Government schemes never ask for registration or processing fees.</li>
-        <li>Emotional pressure, urgency, and secrecy are classic scam signals.</li>
+        <li>Guaranteed high returns usually indicate fraud.</li>
+        <li>Pyramid schemes collapse mathematically.</li>
+        <li>Government schemes never charge registration fees.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>4. Sanatan Dharma – Truth & Context</h3>
+      <h3>Sanatan Dharma – Clarity</h3>
       <ul>
-        <li>Varna was based on qualities and work, not birth.</li>
-        <li>Untouchability is a historical distortion, not scriptural teaching.</li>
-        <li>Core scriptures emphasize equality of atman in all beings.</li>
-        <li>Faith becomes stronger when grounded in knowledge, not confusion.</li>
+        <li>Varna was based on work and qualities, not birth.</li>
+        <li>Untouchability is a distortion, not scripture.</li>
+        <li>Core philosophy teaches equality of atman.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>5. Behaviour, Ethics & Social Conduct</h3>
+      <h3>Behaviour & Ethics</h3>
       <ul>
-        <li>Assertiveness protects dignity without aggression.</li>
-        <li>Boundaries are necessary for mental peace and family stability.</li>
-        <li>Saying “no” respectfully is a life skill, not selfishness.</li>
-        <li>Children learn values more from actions than lectures.</li>
-      </ul>
-    </div>
-
-    <div class="card" id="government">
-      <h3>6. Government Resources That Actually Help</h3>
-      <ul>
-        <li>Ayushman Bharat provides free health cover up to ₹5 lakh.</li>
-        <li>Widow and old-age pensions can be applied through CSCs.</li>
-        <li>Mudra loans are collateral-free and women are priority beneficiaries.</li>
-        <li>Helplines and portals work — middlemen are not required.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>7. Understanding National Development</h3>
-      <ul>
-        <li>Verify viral claims using official data, not forwards.</li>
-        <li>Progress is gradual — neither zero nor perfect.</li>
-        <li>Independent thinking protects against misinformation.</li>
+        <li>Assertiveness protects dignity.</li>
+        <li>Boundaries are essential, not selfish.</li>
+        <li>Children learn values from actions.</li>
       </ul>
     </div>
 
   </section>
 
-  <footer id="share">
+  <!-- GOVERNMENT YOJANAS -->
+  <section id="government">
+
+    <h2>Government Yojanas & Resources (Direct Access)</h2>
+
+    <div class="card">
+      <h3>Ayushman Bharat – PM-JAY (Free Health Insurance)</h3>
+      <ul>
+        <li>Coverage: Up to ₹5 lakh per family per year.</li>
+        <li>Eligibility:
+          <ul>
+            <li>Families listed under SECC-2011</li>
+            <li>All senior citizens aged 70+ years</li>
+          </ul>
+        </li>
+        <li>Website: <a href="https://pmjay.gov.in" target="_blank">https://pmjay.gov.in</a></li>
+        <li>Helpline: 14555</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Free / Subsidized House – PM Awas Yojana (PMAY)</h3>
+      <ul>
+        <li>Eligibility:
+          <ul>
+            <li>Family must not own a pucca house</li>
+            <li>Priority to women-headed households</li>
+            <li>Based on income and SECC data</li>
+          </ul>
+        </li>
+        <li>Website: <a href="https://pmayg.nic.in" target="_blank">https://pmayg.nic.in</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Ration Card – National Food Security Act (NFSA)</h3>
+      <ul>
+        <li>Eligibility:
+          <ul>
+            <li>Low-income / priority households</li>
+            <li>No existing ration card in same family</li>
+            <li>State-specific income limits apply</li>
+          </ul>
+        </li>
+        <li>Food grains at subsidized rates.</li>
+        <li>Portal: <a href="https://nfsa.gov.in" target="_blank">https://nfsa.gov.in</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Women & Financial Support Schemes</h3>
+      <ul>
+        <li>Pradhan Mantri Mudra Yojana – collateral-free loans  
+          <a href="https://www.mudra.org.in" target="_blank">https://www.mudra.org.in</a>
+        </li>
+        <li>Widow & Old Age Pension – NSAP  
+          <a href="https://nsap.nic.in" target="_blank">https://nsap.nic.in</a>
+        </li>
+        <li>Complaints Portal – CPGRAMS  
+          <a href="https://pgportal.gov.in" target="_blank">https://pgportal.gov.in</a>
+        </li>
+      </ul>
+    </div>
+
+    <p><strong>Important:</strong> No government scheme requires payment to apply. Use CSCs or official portals only.</p>
+
+  </section>
+
+  <footer>
     <p><strong>Created by Kallol Chakrabarti, Global Independent Researcher.</strong></p>
     <p>
-      Shared for education, awareness, and responsible use.  
-      When a homemaker is informed, the entire home becomes stronger.
+      Shared for education and awareness.  
+      Knowledge at home builds strength in society.
     </p>
   </footer>
 
